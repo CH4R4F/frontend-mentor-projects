@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/logocm.png"
+        />
+
+        <title>Frontend Mentor | Tip calculator app</title>
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+
+    <body>
+      <div class="app-title">
+        <h3>cmar<br>ghin</h3>
+      </div>
+
+      <div class="app-container">
+        <!-- the parametrs section  -->
+        <div class="parameters">
+          <!-- bill input  -->
+          <div class="section bill">
+            <p class="label">Bill</p>
+            <div class="input">
+              <img src="./images/icon-dollar.svg" alt="">
+              <input type="text" name="bill" id="bill-input" placeholder="0" required>
+            </div>
+          </div>
+
+          <!-- select tip input  -->
+          <div class="section tip-container">
+            <p class="label">Select Tip %</p>
+            <div class="tips">
+              <button class="tip-value" value="5">5%</button>
+              <button class="tip-value" value="10">10%</button>
+              <button class="tip-value" value="15">15%</button>
+              <button class="tip-value" value="25">25%</button>
+              <button class="tip-value" value="50">50%</button>
+              <input type="text" class="tip-value custom" placeholder="Custom">
+            </div>
+          </div>
+
+          <!-- number of people section  -->
+          <div class="section nop">
+            <p class="label">Number Of People</p>
+            <div class="input">
+              <img src="./images/icon-person.svg" alt="">
+              <input type="text" name="nop" id="nop-input" required placeholder="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- result section  -->
+        <div class="result-container">
+
+          <div class="result-type">
+            <div class="result-label">
+              <p class="title">Tip Amount</p>
+              <p class="sub-title">/ person</p>
+            </div>
+            <p>
+              $ <span class="tip-result result-value">0.00</span>
+            </p>
+          </div>
+
+          <div class="result-type">
+            <div class="result-label">
+              <p class="title">Total</p>
+              <p class="sub-title">/ person</p>
+            </div>
+            <p>
+              $ <span class="total-result result-value">0.00</span>
+            </p>
+          </div>
+
+          <button class="reset-results">RESET</button>
+        </div>  
+      </div>
+
+      <script src="./assets/index.js"></script>
+    </body>
+</html>
