@@ -73,6 +73,11 @@ reset.addEventListener("click", function(){
     nop.value = ""
     tipValue = null
     checkedTip[0] = false
+    if(checkedTip[1]){
+        checkedTip[1].classList.remove("active")
+        checkedTip.pop()
+    }
+
     document.querySelector(".custom").value = ""
     initResults()
 })
