@@ -26,8 +26,8 @@ Users should be able to:
 
 ### links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3-responsive-column-card-component-GeNaFSZk7)
+-   Live Site URL: [Add live site URL here](https://fem-projects.netlify.app/3-column-preview-card-component-main/)
 
 ## My process
 
