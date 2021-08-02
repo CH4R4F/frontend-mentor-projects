@@ -1,0 +1,99 @@
+:root {
+    --header--font: "Big Shoulders Display", cursive;
+    --text-font: "Lexend Deca", sans-serif;
+    /* colors  */
+    --orange-clr: hsl(31, 77%, 52%);
+    --cyan-clr: hsl(184, 100%, 22%);
+    --dark-cyan-clr: hsl(179, 100%, 13%);
+    --bg-clr: hsl(0, 0%, 95%);
+    --text-clr: hsla(0, 0%, 100%, 0.75);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 400 62.5% var(--text-font);
+    color: var(--text-clr);
+}
+body {
+    background: var(--bg-clr);
+    min-height: 100vh;
+    padding: 5rem 1rem;
+    display: grid;
+    place-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 3rem;
+    max-width: 300px;
+}
+
+/* every element inside the .card element that has another element before it will have margin top (so the first element won't be included */
+
+[class*="card__"] + [class*="card__"] {
+    margin-top: 2rem;
+}
+/* separated styles  */
+.card--sedans {
+    background-color: var(--orange-clr);
+}
+.card--suvs {
+    background-color: var(--cyan-clr);
+}
+.card--luxury {
+    background-color: var(--dark-cyan-clr);
+}
+.card--sedans .card__btn {
+    color: var(--orange-clr);
+}
+.card--suvs .card__btn {
+    color: var(--cyan-clr);
+}
+.card--luxury .card__btn {
+    color: var(--dark-cyan-clr);
+}
+/* card titles  */
+.card__title {
+    font: 700 3rem var(--header--font);
+    text-transform: uppercase;
+    color: var(--bg-clr);
+}
+/* card content  */
+.card__content {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+/* card button */
+.card__btn {
+    background: var(--bg-clr);
+    border: 2px solid var(--bg-clr);
+    color: var(--bg-clr);
+    padding: 0.5em 1.2em;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.card__btn:hover {
+    background: transparent;
+    color: var(--bg-clr);
+    border: 2px solid var(--bg-clr);
+}
+
+/* for the desktop view it only changes the direction of the cards  */
+@media only screen and (min-width: 1000px) {
+    .container {
+        flex-direction: row;
+    }
+}

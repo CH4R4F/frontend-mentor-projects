@@ -1,0 +1,6 @@
+*.zip
+gulpfile.js
+*.json
+/node_modules
+README-template.md
+style-guide.md
