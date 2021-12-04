@@ -1,0 +1,85 @@
+:root {
+    --soft-blue: rgb(139, 172, 218);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-bg: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    vertical-align: sub;
+}
+body {
+    padding: 0 2rem;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+img, h2, span {
+    cursor: pointer;
+}
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    max-width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 20px 7px 15px hsl(212, 54%, 9%);
+}
+
+.card__img {
+    border-radius: 14px;
+    overflow: hidden;
+}
+.card__img, h2, .card__info > p, .card__info--state{
+    margin-bottom: 1rem;
+}
+.card__info h2{
+    font-size: 1.2rem;
+}
+.card__info > p {
+    color: var(--soft-blue);
+}
+.card__info--state, .card__info--owner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card__info--state {
+    justify-content: space-between;
+    align-items: center;
+}
+.date, .card__info--owner p {
+    color: var(--soft-blue);
+}
+.price {
+    color: var(--cyan);
+    font-weight: 500;
+}
+.card__info--owner img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+.card__info--owner span {
+    color: var(--white);
+}
+.card__info--owner {
+    margin-top: 1rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--line-bg);
+}
