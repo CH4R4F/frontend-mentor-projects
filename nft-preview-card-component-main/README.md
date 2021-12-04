@@ -24,7 +24,8 @@ Your users should be able to:
 ![](./images/mobile.png)
 
 ### Links
-
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/nft-card-component-iarD-0m-e)
+-   Live Site URL: [Add live site URL here](https://fem-projects.netlify.app/nft-preview-card-component-main/)
 
 ## Me
 -   Frontend Mentor - [@CMarghin](https://www.frontendmentor.io/profile/CH4R4F)
