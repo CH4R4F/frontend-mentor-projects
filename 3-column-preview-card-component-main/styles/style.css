@@ -38,6 +38,7 @@ body {
 .card {
     padding: 3rem;
     max-width: 300px;
+    display: grid;
 }
 
 /* every element inside the .card element that has another element before it will have margin top (so the first element won't be included */
@@ -84,6 +85,7 @@ body {
     padding: 0.5em 1.2em;
     border-radius: 2rem;
     cursor: pointer;
+    justify-self: start;
 }
 .card__btn:hover {
     background: transparent;
